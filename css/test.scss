@@ -1,0 +1,97 @@
+@import url('http://fonts.cdnfonts.com/css/fredoka-one');
+$bgcolor: #ECE6D4;
+$navbgcolor: #ffffff;
+$textcolor: #323232;
+$fontsize: 18px;
+$flex: flex;
+$center: center;
+$right: right;
+
+h1 {
+  font-size: 50px;
+}
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+/* nav bar */
+nav {
+  background-color: $navbgcolor;
+  position: fixed;
+  display: $flex;
+  align-items: $center;
+  justify-content: $right;
+  width: 100%;
+  height: 85px;
+  box-shadow: 0px 10px 20px -1px rgb(120 120 120/ 30%);
+}
+
+nav ul {
+  display: $flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav li {
+  padding: 10px 30px;
+}
+
+nav a {
+  color: $textcolor;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: deepskyblue;
+  text-decoration: line-through;
+}
+/* div section */
+.row {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+    url("../images/fashion bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  // background: $bgcolor;
+  padding: 15% 10%;
+}
+
+.row h1 {
+  color: darkblue;
+}
+
+.row h1 span {
+  color: palevioletred;                                         
+  font-size: 60px;                                            
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row h1 span:hover {
+  color: palevioletred;
+}
+.row .col-md-12 {
+  display: $flex;
+  align-items: $center;
+  justify-content: $center;
+}
+.getstarted {
+  border-radius: 30px;
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  background: transparent;
+  padding: 12px 20px;
+}
+.shop {
+  border-radius: 30px;
+  border: 1px solid palevioletred;
+  color: $textcolor;
+  background-color: palevioletred;
+  padding: 12px 20px;
+}
